@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>ProOPP</title>
+    <link rel="stylesheet" type="text/css" href="ashicss.css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="logo.jpg" class="cow">
+                <h1>ProfOPP</h1>
+                <h1>LogIn</h1>
+                <form>
+                    <p>User Id</p>
+                    <input type="text" name="" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="text" name="" placeholder="Enter Password">
+                    <input type="submit" name="" value="LogIn" onclick="auth()" />
+                </form>
+     </div>
+    <script>
+        function auth(){
+            var Username = document.getElementById("username").value;
+            var Password = document.getElementById("password").value;
+            if(username== "admin_gov" && password=="admin123")
+            {
+                window.location.assign("loginpage2.htm");
+                alert("Login Successfully");
+            }
+            else
+            {
+                alert("Invalide Information");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

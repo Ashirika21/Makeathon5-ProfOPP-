@@ -1,0 +1,39 @@
+
+<html>
+<head>
+<title>ProfOPP</title>
+    <link rel="stylesheet" type="text/css" href="logment1.css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="logo.png" class="cow">
+                <h1>ProfOPP</h1>
+                <h1>LogIn As Mentor</h1>
+                <form>
+                    <p>Mentor Id</p>
+                    <input type="text" name="" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="text" name="" placeholder="Enter Password">
+                    <input type="submit" name="" value="LogIn" onclick="auth()" />
+                    <a href="#">Forgot Password</a><br>
+                     <a href="#">SignUp</a>
+                </form>
+     </div>
+    <script>
+        function auth(){
+            var Username = document.getElementById("username").value;
+            var Password = document.getElementById("password").value;
+            if(username== "admin_gov" && password=="admin123")
+            {
+                window.location.assign("loginpage2.htm");
+                alert("Login Successfully");
+            }
+            else
+            {
+                alert("Invalide Information");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
